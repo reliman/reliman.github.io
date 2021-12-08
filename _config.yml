@@ -27,3 +27,5 @@ half_side: right
 
 # Full layout
 full_text_position: right # left, right or center
+
+theme: jekyll-theme-cayman
