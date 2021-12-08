@@ -1,0 +1,29 @@
+# Your Name or Company
+title: Aurelia Mandani
+
+# Description of your website. This is used for social sharing.
+description:  PhD Candidate, Data Enthusiast, Librarian, and IT Engineer
+
+# A brief blurb about yourself
+content: Nullam id dolor id nibh ultricies vehicula ut id elit. Cras mattis consectetur purus sit amet fermentum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras mattis consectetur purus sit amet fermentum.
+
+# Add your social links
+social:
+  - platform: github
+    url: https://github.com/aureliamandani
+  - platform: linkedin
+    url: https://linkedin.com/in/aureliamandani
+
+# General settings
+# url: http://aureliamandani.com
+markdown: kramdown
+sharing_image: A.jpg
+google_analytics: "GTM-KX77PWP" # google analytics tracking
+
+#### LAYOUT OPTIONS #####
+
+# Half layout
+half_side: right
+
+# Full layout
+full_text_position: right # left, right or center
