@@ -1,0 +1,1098 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Documentation - Themebau</title>
+        <meta name="description" content="Themebau">
+        <meta name="author" content="RunWebRun">
+        <link rel="icon" type="image/png" href="assets/images/favicon.png">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <!-- Google Fonts -->
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+        <!-- START: Styles -->
+        <!-- Fancybox -->
+        <link rel="stylesheet" href="assets/vendor/fancybox/dist/jquery.fancybox.min.css" />
+        <!-- Documentation -->
+        <link rel="stylesheet" href="assets/css/documentation.min.css">
+        <!-- jQuery -->
+        <script src="assets/vendor/jquery/dist/jquery.min.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <aside class="content-sidebar">
+                <div class="navbar">
+                    <ul class="navbar-nav">
+                        <li class="navbar-item">
+                            <a href="#introduction" class="navbar-link">Introduction</a>
+                        </li>
+                        <li class="navbar-item navbar-dropdown">
+                            <a href="#getting_started" class="navbar-link">Getting Started</a>
+                            <div class="navbar-dropdown-menu">
+                                <ul class="navbar-nav">
+                                    <li class="navbar-item">
+                                        <a href="#files_structure" class="navbar-link">Files Structure</a>
+                                    </li>
+                                    <li class="navbar-item">
+                                        <a href="#development" class="navbar-link">Development</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="navbar-item navbar-dropdown">
+                            <a href="#template_structure" class="navbar-link">Template Structure</a>
+                            <div class="navbar-dropdown-menu">
+                                <ul class="navbar-nav">
+                                    <li class="navbar-item">
+                                        <a href="#navigation_top" class="navbar-link">Main Navigation [top]</a>
+                                    </li>
+                                    <li class="navbar-item">
+                                        <a href="#navigation_left" class="navbar-link">Main Navigation [left]</a>
+                                    </li>
+                                    <li class="navbar-item">
+                                        <a href="#fullscreen_navigation" class="navbar-link">Fullscreen Navigation</a>
+                                    </li>
+                                    <li class="navbar-item">
+                                        <a href="#footer" class="navbar-link">Footer</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="navbar-item navbar-dropdown">
+                            <a href="#component_button" class="navbar-link">Components</a>
+                            <div class="navbar-dropdown-menu">
+                                <ul class="navbar-nav">
+                                    <li class="navbar-item">
+                                        <a href="#component_background" class="navbar-link">Background</a>
+                                    </li>
+                                    <li class="navbar-item">
+                                        <a href="#component_brand" class="navbar-link">Brand</a>
+                                    </li>
+                                    <li class="navbar-item">
+                                        <a href="#component_button" class="navbar-link">Buttons</a>
+                                    </li>
+                                    <li class="navbar-item">
+                                        <a href="#component_card" class="navbar-link">Card</a>
+                                    </li>
+                                    <li class="navbar-item">
+                                        <a href="#component_collapse" class="navbar-link">Collapse</a>
+                                    </li>
+                                    <li class="navbar-item">
+                                        <a href="#component_cursor" class="navbar-link">Cursor</a>
+                                    </li>
+                                    <li class="navbar-item">
+                                        <a href="#component_feature" class="navbar-link">Feature</a>
+                                    </li>
+                                    <li class="navbar-item">
+                                        <a href="#component_form" class="navbar-link">Form</a>
+                                    </li>
+                                    <li class="navbar-item">
+                                        <a href="#component_gallery" class="navbar-link">Gallery</a>
+                                    </li>
+                                    <li class="navbar-item">
+                                        <a href="#component_interactive_links" class="navbar-link">Interactive Links</a>
+                                    </li>
+                                    <li class="navbar-item">
+                                        <a href="#component_list" class="navbar-link">List Group</a>
+                                    </li>
+                                    <li class="navbar-item">
+                                        <a href="#component_media" class="navbar-link">Media</a>
+                                    </li>
+                                    <li class="navbar-item">
+                                        <a href="#component_nav" class="navbar-link">Nav</a>
+                                    </li>
+                                    <li class="navbar-item">
+                                        <a href="#component_number" class="navbar-link">Number Box</a>
+                                    </li>
+                                    <li class="navbar-item">
+                                        <a href="#component_page_navigation" class="navbar-link">Page Navigation</a>
+                                    </li>
+                                    <li class="navbar-item">
+                                        <a href="#component_review" class="navbar-link">Review</a>
+                                    </li>
+                                    <li class="navbar-item">
+                                        <a href="#component_shape" class="navbar-link">Shape</a>
+                                    </li>
+                                    <li class="navbar-item">
+                                        <a href="#component_table" class="navbar-link">Table</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="navbar-item navbar-dropdown">
+                            <a href="#countdown" class="navbar-link">Plugins</a>
+                            <div class="navbar-dropdown-menu">
+                                <ul class="navbar-nav">
+                                    <li class="navbar-item">
+                                        <a href="#countdown" class="navbar-link">Countdown</a>
+                                    </li>
+                                    <li class="navbar-item">
+                                        <a href="#isotope" class="navbar-link">Isotope</a>
+                                    </li>
+                                    <li class="navbar-item">
+                                        <a href="#swiper" class="navbar-link">Swiper</a>
+                                    </li>
+                                    <li class="navbar-item">
+                                        <a href="#show_on_scroll" class="navbar-link">Show on Scroll</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="navbar-item navbar-dropdown">
+                            <a href="#plugins" class="navbar-link">Credits</a>
+                            <div class="navbar-dropdown-menu">
+                                <ul class="navbar-nav">
+                                    <li class="navbar-item">
+                                        <a href="#plugins" class="navbar-link">Plugins</a>
+                                    </li>
+                                    <li class="navbar-item">
+                                        <a href="#images" class="navbar-link">Images</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="navbar-item">
+                            <a href="#thank_you" class="navbar-link">Thank You!</a>
+                        </li>
+                    </ul>
+                </div>
+            </aside>
+            <div class="content-wrap">
+                <div class="dx-card tab-content" id="#getting_started">
+                    <h2>Getting Started</h2>
+                    <p>This is an HTML template. To get started you need only Browser to run HTML files. Better upload files to the web server and run the site there.</p>
+                    <p>To customize the template you can edit CSS and HTML files. Also if you are a developer, there are available source files SCSS, JS (ES6) and HTML (Nunjucks). All used plugins added from npm.</p>
+                    <p>For each page available blank CSS file for your customizations. See it here – <code>assets/css/custom.css</code>.</p>
+                </div>
+                <div class="dx-card tab-content" id="#files_structure">
+                    <h2>Files Structure</h2>
+                    <ul>
+                        <li><code>/themebau/dist/</code> – main template folder with all files to getting started:</li>
+                        <li><code>/*.html</code> – all html files;</li>
+                        <li><code>/assets/css/</code> – main template css files;</li>
+                        <li><code>/assets/js/</code> – main template js files;</li>
+                        <li><code>/assets/vendor/</code> – 3rd-party plugins;</li>
+                        <li><code>/assets/images/</code> – all images used in template (note that in the download archive some of these are placeholders);</li>
+                        <li><code>/themebau/src/</code> – source files for developers:</li>
+                        <li><code>/css/*.scss</code> – SCSS source files;</li>
+                        <li><code>/js/*.js</code> – JS source files (ES6);</li>
+                        <li><code>/html/*.html</code> – HTML source files (Nunjucks);</li>
+                        <li><code>/static/</code> – static files;</li>
+                        <li><code>/themebau/*</code> – system files for development;</li>
+                        <li><code>/README.html</code> – contains some useful links for getting started;</li>
+                    </ul>
+                </div>
+                <div class="dx-card tab-content" id="#development">
+                    <h2>Development</h2>
+                    <p>Themebau template is developer-friendly and contains source files + gulp tasks.</p>
+                    <p>Make sure, that we will not help you with any troubles that you faced with source builds, so if you don’t have any experience with <code>npm</code>, <code>gulp</code> and <code>webpack</code>, please first learn more about these tools. These sources only for developers.</p>
+                    <h3>Requirements</h3>
+                    <ol>
+                        <li>Node.js and npm – <a href="https://nodejs.org/en/">https://nodejs.org/en/</a></li>
+                    </ol>
+                    <h3>Getting Started</h3>
+                    <ul>
+                        <li>Unzip downloaded template and open <code>/themebau/</code> folder</li>
+                        <li>Install node modules by running the terminal command <code>npm install</code></li>
+                        <li>Start development using <code>npm run dev</code></li>
+                    </ul>
+                    <p><code>dev</code> task will build files to /dist/ folder.</p>
+                    <h4>Configure HTML</h4>
+                    <p>Configurations for HTML files places in <code>/src/html/data/global.json</code></p>
+                </div>
+                <div class="dx-card tab-content show" id="#introduction">
+                    <h1>Themebau</h1>
+                    <p>Thank you for purchasing Themebau!</p>
+                    <p>Prepare to meet the one and only Bootstrap template perfect for both corporate and creative projects. You can build any type of pages with Bootstrap components. Creating and Editing Pages are greatly simplified by the most powerfull templating engine — Nunjucks. Create the hand-crafted look you have been dreaming about with Themebau.</p>
+                    <p>This guide will help you get started with Themebau! All the important stuff – compiling the source, file structure, build tools, file includes – is documented here, but should you have any questions, always feel free to reach out to <a href="mailto:runwebrun@gmail.com">runwebrun@gmail.com</a></p>
+                </div>
+                <div class="dx-card tab-content" id="#template_structure">
+                    <h2>Template Structure</h2>
+                    <p>Below described main layout elements: <code>Main Navigation</code>, <code>Fullscreen Navigation</code>, <code>Footer</code>.</p>
+                </div>
+                <!-- Navigation -->
+                <div class="dx-card tab-content" id="#navigation_top">
+                    <h2>Main Navigation</h2>
+                    <a href="assets/images/navigation-top.jpg" data-fancybox>
+                        <img src="assets/images/navigation-top.jpg" alt="">
+                    </a>
+                    <label>HTML example:</label>
+                    <code class="dx-gist" data-gist-id="3f734874358abecb0abc51a0c44597f8" data-gist-file="navigation-top.html"></code>
+                    <label>Navigation:</label>
+                    <ul>
+                        <li><code>.navbar-fixed</code> - fixed navbar on page scroll</li>
+                        <li><code>.navbar-relative</code> - static navbar on page scroll</li>
+                        <li><code>.navbar-expand</code> - <code>-xl</code> <code>-lg</code> <code>-md</code> <code>-sm</code> - display menu</li>
+                        <li><code>.navbar-dark</code> - dark style</li>
+                        <li><code>.navbar-scroll</code> - adds when scrolling</li>
+                    </ul>
+                </div>
+                <div class="dx-card tab-content" id="#navigation_left">
+                    <h2>Navigation Left</h2>
+                    <a href="assets/images/navigation-left.jpg" data-fancybox>
+                        <img width="323" src="assets/images/navigation-left.jpg" alt="">
+                    </a>
+                    <label>HTML example:</label>
+                    <code class="dx-gist" data-gist-id="3f734874358abecb0abc51a0c44597f8" data-gist-file="navigation-left.html"></code>
+                    <label>Navigation:</label>
+                    <ul>
+                        <li><code>.navbar-expand</code> - <code>-xl</code> <code>-lg</code> <code>-md</code> <code>-sm</code> - display menu</li>
+                        <li><code>.navbar-dark</code> - dark style</li>
+                        <li><code>.navbar-scroll</code> - adds when scrolling</li>
+                    </ul>
+                </div>
+                <div class="dx-card tab-content" id="#fullscreen_navigation">
+                    <h2>Fullscreen Navigation</h2>
+                    <label>Navigations:</label>
+                    <ul>
+                        <li><code>.navbar-dark</code> - dark style</li>
+                        <li>Worked by a <code>Fancybox</code> plugin!</li>
+                    </ul>
+                    <h3>Style 1</h3>
+                    <a href="assets/images/navigation-fullscreen-1.jpg" data-fancybox>
+                        <img width="375" src="assets/images/navigation-fullscreen-1.jpg" alt="">
+                    </a>
+                    <label>HTML example:</label>
+                    <code class="dx-gist" data-gist-id="3f734874358abecb0abc51a0c44597f8" data-gist-file="navigation-fullscreen-1.html"></code>
+                    <h3>Style 2</h3>
+                    <a href="assets/images/navigation-fullscreen-2.jpg" data-fancybox>
+                        <img src="assets/images/navigation-fullscreen-2.jpg" alt="">
+                    </a>
+                    <label>HTML example:</label>
+                    <code class="dx-gist" data-gist-id="3f734874358abecb0abc51a0c44597f8" data-gist-file="navigation-fullscreen-2.html"></code>
+                    <h3>Style 3</h3>
+                    <a href="assets/images/navigation-fullscreen-3.jpg" data-fancybox>
+                        <img src="assets/images/navigation-fullscreen-3.jpg" alt="">
+                    </a>
+                    <label>HTML example:</label>
+                    <code class="dx-gist" data-gist-id="3f734874358abecb0abc51a0c44597f8" data-gist-file="navigation-fullscreen-3.html"></code>
+                    <h3>Style 4</h3>
+                    <a href="assets/images/navigation-fullscreen-4.jpg" data-fancybox>
+                        <img width="320" src="assets/images/navigation-fullscreen-4.jpg" alt="">
+                    </a>
+                    <label>HTML example:</label>
+                    <code class="dx-gist" data-gist-id="3f734874358abecb0abc51a0c44597f8" data-gist-file="navigation-fullscreen-4.html"></code>
+                </div>
+                <!-- Footer -->
+                <div class="dx-card tab-content" id="#footer">
+                    <h2>Footer</h2>
+                    <label>Footer:</label>
+                    <ul>
+                        <li><code>.bg-dark</code>, <code>.text-white</code> - dark style</li>
+                    </ul>
+                    <h3>Style 1</h3>
+                    <a href="assets/images/footer-1.jpg" data-fancybox>
+                        <img src="assets/images/footer-1.jpg" alt="">
+                    </a>
+                    <label>HTML example:</label>
+                    <code class="dx-gist" data-gist-id="3f734874358abecb0abc51a0c44597f8" data-gist-file="footer-1.html"></code>
+                    <h3>Style 2</h3>
+                    <a href="assets/images/footer-2.jpg" data-fancybox>
+                        <img src="assets/images/footer-2.jpg" alt="">
+                    </a>
+                    <label>HTML example:</label>
+                    <code class="dx-gist" data-gist-id="3f734874358abecb0abc51a0c44597f8" data-gist-file="footer-2.html"></code>
+                    <h3>Style 3</h3>
+                    <a href="assets/images/footer-3.jpg" data-fancybox>
+                        <img src="assets/images/footer-3.jpg" alt="">
+                    </a>
+                    <label>HTML example:</label>
+                    <code class="dx-gist" data-gist-id="3f734874358abecb0abc51a0c44597f8" data-gist-file="footer-3.html"></code>
+                </div>
+                <!-- Background -->
+                <div class="dx-card tab-content" id="#component_background">
+                    <h2>Background</h2>
+                    <div class="example">
+                        <div class="position-relative" style="width: 100%; height: 300px; z-index: 1;">
+                            <div class="background">
+                                <div class="background-image">
+                                    <img src="assets/images/example.jpg" alt="">
+                                </div>
+                                <div class="background-color" style="background-color: rgb(14, 14, 14, .2);"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <label>HTML Example:</label>
+                    <code class="dx-gist" data-gist-id="3f734874358abecb0abc51a0c44597f8" data-gist-file="background.html"></code>
+                </div>
+                <!-- Brand -->
+                <div class="dx-card tab-content" id="#component_brand">
+                    <h2>Brand</h2>
+                    <h3>Default</h3>
+                    <div class="example">
+                        <a href="#" class="brand text-grey">
+                            <svg width='120' height='32' viewBox='0 0 120 32' fill='none' xmlns='http://www.w3.org/2000/svg'>
+                                <rect width='120' height='32' fill='#F1F1F1' />
+                                <path d='M36.522 10.3636H35.1129L32.2038 12.2955V13.7273L35.0447 11.8409H35.1129V22H36.522V10.3636ZM39.8686 22H47.2095V20.75H41.8004V20.6591L44.4141 17.8636C46.4141 15.7216 47.005 14.7216 47.005 13.4318C47.005 11.6364 45.5504 10.2045 43.505 10.2045C41.4652 10.2045 39.9141 11.5909 39.9141 13.6364H41.255C41.255 12.3125 42.1129 11.4318 43.4595 11.4318C44.7209 11.4318 45.6868 12.2045 45.6868 13.4318C45.6868 14.5057 45.0561 15.3011 43.7095 16.7727L39.8686 20.9773V22ZM53.3516 22.1591C55.9197 22.1591 57.397 19.983 57.397 16.1818C57.397 12.4091 55.897 10.2045 53.3516 10.2045C50.8061 10.2045 49.3061 12.4091 49.3061 16.1818C49.3061 19.983 50.7834 22.1591 53.3516 22.1591ZM53.3516 20.9091C51.6584 20.9091 50.6697 19.2102 50.6697 16.1818C50.6697 13.1591 51.6697 11.4318 53.3516 11.4318C55.0334 11.4318 56.0334 13.1591 56.0334 16.1818C56.0334 19.2102 55.0447 20.9091 53.3516 20.9091ZM66.397 19.9091L67.2607 19.0455L64.4879 16.2727L67.2607 13.5L66.397 12.6364L63.6243 15.4091L60.8516 12.6364L59.9879 13.5L62.7607 16.2727L59.9879 19.0455L60.8516 19.9091L63.6243 17.1364L66.397 19.9091ZM74.0348 22.1591C76.2905 22.1591 77.9666 20.7443 77.9666 18.8409C77.9666 17.3636 77.0916 16.2898 75.6257 16.0455V15.9545C76.8018 15.5966 77.5348 14.6307 77.5348 13.3182C77.5348 11.6705 76.2337 10.2045 74.0803 10.2045C72.0689 10.2045 70.3984 11.4432 70.3303 13.2727H71.6939C71.745 12.1136 72.8473 11.4318 74.0575 11.4318C75.3416 11.4318 76.1712 12.2102 76.1712 13.3864C76.1712 14.6136 75.2109 15.4091 73.8303 15.4091H72.8984V16.6591H73.8303C75.5973 16.6591 76.5803 17.5568 76.5803 18.8409C76.5803 20.0739 75.5064 20.9091 74.0121 20.9091C72.6655 20.9091 71.5973 20.2159 71.5121 19.0909H70.0803C70.1655 20.9205 71.7791 22.1591 74.0348 22.1591ZM80.2905 22H87.6314V20.75H82.2223V20.6591L84.8359 17.8636C86.8359 15.7216 87.4268 14.7216 87.4268 13.4318C87.4268 11.6364 85.9723 10.2045 83.9268 10.2045C81.8871 10.2045 80.3359 11.5909 80.3359 13.6364H81.6768C81.6768 12.3125 82.5348 11.4318 83.8814 11.4318C85.1428 11.4318 86.1087 12.2045 86.1087 13.4318C86.1087 14.5057 85.478 15.3011 84.1314 16.7727L80.2905 20.9773V22Z' fill='#707070' />
+                            </svg>
+                        </a>
+                    </div>
+                    <h3>Bordered</h3>
+                    <div class="example">
+                        <a href="#" class="brand brand-bordered text-dark">
+                            <svg width='120' height='32' viewBox='0 0 120 32' fill='none' xmlns='http://www.w3.org/2000/svg'>
+                                <rect width='120' height='32' fill='#F1F1F1' />
+                                <path d='M36.522 10.3636H35.1129L32.2038 12.2955V13.7273L35.0447 11.8409H35.1129V22H36.522V10.3636ZM39.8686 22H47.2095V20.75H41.8004V20.6591L44.4141 17.8636C46.4141 15.7216 47.005 14.7216 47.005 13.4318C47.005 11.6364 45.5504 10.2045 43.505 10.2045C41.4652 10.2045 39.9141 11.5909 39.9141 13.6364H41.255C41.255 12.3125 42.1129 11.4318 43.4595 11.4318C44.7209 11.4318 45.6868 12.2045 45.6868 13.4318C45.6868 14.5057 45.0561 15.3011 43.7095 16.7727L39.8686 20.9773V22ZM53.3516 22.1591C55.9197 22.1591 57.397 19.983 57.397 16.1818C57.397 12.4091 55.897 10.2045 53.3516 10.2045C50.8061 10.2045 49.3061 12.4091 49.3061 16.1818C49.3061 19.983 50.7834 22.1591 53.3516 22.1591ZM53.3516 20.9091C51.6584 20.9091 50.6697 19.2102 50.6697 16.1818C50.6697 13.1591 51.6697 11.4318 53.3516 11.4318C55.0334 11.4318 56.0334 13.1591 56.0334 16.1818C56.0334 19.2102 55.0447 20.9091 53.3516 20.9091ZM66.397 19.9091L67.2607 19.0455L64.4879 16.2727L67.2607 13.5L66.397 12.6364L63.6243 15.4091L60.8516 12.6364L59.9879 13.5L62.7607 16.2727L59.9879 19.0455L60.8516 19.9091L63.6243 17.1364L66.397 19.9091ZM74.0348 22.1591C76.2905 22.1591 77.9666 20.7443 77.9666 18.8409C77.9666 17.3636 77.0916 16.2898 75.6257 16.0455V15.9545C76.8018 15.5966 77.5348 14.6307 77.5348 13.3182C77.5348 11.6705 76.2337 10.2045 74.0803 10.2045C72.0689 10.2045 70.3984 11.4432 70.3303 13.2727H71.6939C71.745 12.1136 72.8473 11.4318 74.0575 11.4318C75.3416 11.4318 76.1712 12.2102 76.1712 13.3864C76.1712 14.6136 75.2109 15.4091 73.8303 15.4091H72.8984V16.6591H73.8303C75.5973 16.6591 76.5803 17.5568 76.5803 18.8409C76.5803 20.0739 75.5064 20.9091 74.0121 20.9091C72.6655 20.9091 71.5973 20.2159 71.5121 19.0909H70.0803C70.1655 20.9205 71.7791 22.1591 74.0348 22.1591ZM80.2905 22H87.6314V20.75H82.2223V20.6591L84.8359 17.8636C86.8359 15.7216 87.4268 14.7216 87.4268 13.4318C87.4268 11.6364 85.9723 10.2045 83.9268 10.2045C81.8871 10.2045 80.3359 11.5909 80.3359 13.6364H81.6768C81.6768 12.3125 82.5348 11.4318 83.8814 11.4318C85.1428 11.4318 86.1087 12.2045 86.1087 13.4318C86.1087 14.5057 85.478 15.3011 84.1314 16.7727L80.2905 20.9773V22Z' fill='#707070' />
+                            </svg>
+                        </a>
+                    </div>
+                    <label>HTML Example:</label>
+                    <code class="dx-gist" data-gist-id="3f734874358abecb0abc51a0c44597f8" data-gist-file="brand.html"></code>
+                </div>
+                <!-- Button -->
+                <div class="dx-card tab-content" id="#component_button">
+                    <h2>Buttons</h2>
+                    <h3>Default</h3>
+                    <div class="example">
+                        <button class="btn btn-dark">Button</button>
+                    </div>
+                    <div class="example bg-dark">
+                        <button class="btn btn-white">Button</button>
+                    </div>
+                    <h3>With Ball</h3>
+                    <div class="example">
+                        <button class="btn btn-dark btn-with-ball">Button<span class="btn-ball"></span></button>
+                    </div>
+                    <h3>Circle</h3>
+                    <div class="example">
+                        <div class="row gh-1">
+                            <div class="col-auto">
+                                <button class="btn btn-light btn-circle btn-lg">👋</button>
+                            </div>
+                            <div class="col-auto">
+                                <button class="btn btn-light btn-circle btn-md">👋</button>
+                            </div>
+                            <div class="col-auto">
+                                <button class="btn btn-light btn-circle btn-sm">👋</button>
+                            </div>
+                            <div class="col-auto">
+                                <button class="btn btn-light btn-circle btn-xs">👋</button>
+                            </div>
+                        </div>
+                    </div>
+                    <h3>Link & Clean</h3>
+                    <div class="example">
+                        <button class="btn btn-dark btn-link btn-clean">Button</button>
+                    </div>
+                    <label>HTML Example:</label>
+                    <code class="dx-gist" data-gist-id="3f734874358abecb0abc51a0c44597f8" data-gist-file="buttons.html"></code>
+                </div>
+                <!-- Form -->
+                <div class="dx-card tab-content" id="#component_form">
+                    <h2>Form</h2>
+                    <h3>Inputs</h3>
+                    <div class="example">
+                        <div class="row gh-1">
+                            <div class="col-6">
+                                <input type="text" class="form-control form-control-lg" placeholder="Input">
+                            </div>
+                            <div class="col-6">
+                                <input type="text" class="form-control" placeholder="Input">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="example bg-dark">
+                        <div class="row gh-1">
+                            <div class="col-6">
+                                <input type="text" class="form-control form-control-white form-control-lg" placeholder="Input">
+                            </div>
+                            <div class="col-6">
+                                <input type="text" class="form-control form-control-white" placeholder="Input">
+                            </div>
+                        </div>
+                    </div>
+                    <h3>Form Group Overlay</h3>
+                    <div class="example">
+                        <div class="form-group-overlay">
+                            <input type="text" class="form-control" placeholder="Input">
+                            <button class="btn btn-dark btn-link btn-clean btn-with-ball">button<span class="btn-ball"></span></button>
+                        </div>
+                    </div>
+                    <h3>Checkbox Btn</h3>
+                    <div class="example bg-dark">
+                        <div class="row gh-1">
+                            <div class="col-auto">
+                                <input class="checkbox-btn" type="checkbox" id="checkboxExample">
+                                <label class="mt-0" for="checkboxExample"><span>Button</span></label>
+                            </div>
+                            <div class="col-auto">
+                                <input class="checkbox-btn" type="checkbox" id="checkboxExampleChecked" checked>
+                                <label class="mt-0" for="checkboxExampleChecked"><span>Button</span></label>
+                            </div>
+                        </div>
+                    </div>
+                    <label>HTML Example:</label>
+                    <code class="dx-gist" data-gist-id="3f734874358abecb0abc51a0c44597f8" data-gist-file="form.html"></code>
+                </div>
+                <!-- List -->
+                <div class="dx-card tab-content" id="#component_list">
+                    <h2>List Group</h2>
+                    <h3>Borderless</h3>
+                    <div class="example">
+                        <ul class="list-group borderless">
+                            <li class="list-group-item">Cras justo odio</li>
+                            <li class="list-group-item">Dapibus ac facilisis in</li>
+                            <li class="list-group-item">Morbi leo risus</li>
+                            <li class="list-group-item">Porta ac consectetur ac</li>
+                            <li class="list-group-item">Vestibulum at eros</li>
+                        </ul>
+                    </div>
+                    <h3>Gap</h3>
+                    <div class="example">
+                        <ul class="list-group list-group-gap borderless">
+                            <li class="list-group-item">Cras justo odio</li>
+                            <li class="list-group-item">Dapibus ac facilisis in</li>
+                            <li class="list-group-item">Morbi leo risus</li>
+                            <li class="list-group-item">Porta ac consectetur ac</li>
+                            <li class="list-group-item">Vestibulum at eros</li>
+                        </ul>
+                    </div>
+                    <label>HTML Example:</label>
+                    <code class="dx-gist" data-gist-id="3f734874358abecb0abc51a0c44597f8" data-gist-file="list-group.html"></code>
+                </div>
+                <!-- Card -->
+                <div class="dx-card tab-content" id="#component_card">
+                    <h2>Card</h2>
+                    <p>size image - <code>.card-image-sm</code>, <code>.card-image-md</code>, <code>.card-image-lg</code>, <code>.card-image-xl</code></p>
+                    <h3>Portfolio Default</h3>
+                    <p><code>.card-portfolio</code> <code>.card-default</code></p>
+                    <p>Additional classes: <code>.card-hover-frame</code>, <code>.card-hover-zoom</code></p>
+                    <div class="example">
+                        <div class="row gh-1 gv-1">
+                            <div class="col-auto">
+                                <a class="card card-portfolio card-default card-hover-zoom" href="#">
+                                    <span class="card-img">
+                                        <img src="assets/images/example.jpg" alt="">
+                                    </span>
+                                    <span class="card-body">
+                                        <span class="card-title h4">Creative Branding</span>
+                                        <span class="card-category subtitle">branding</span>
+                                    </span>
+                                </a>
+                            </div>
+                            <div class="col-auto">
+                                <a class="card card-portfolio card-default card-hover-frame" href="#">
+                                    <span class="card-img">
+                                        <img src="assets/images/example.jpg" alt="">
+                                    </span>
+                                    <span class="card-body">
+                                        <span class="card-title h4">Creative Branding</span>
+                                        <span class="card-category subtitle">branding</span>
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <label>HTML Example:</label>
+                    <code class="dx-gist" data-gist-id="3f734874358abecb0abc51a0c44597f8" data-gist-file="card-portfolio-default.html"></code>
+                    <h3>Portfolio Overlay</h3>
+                    <p><code>.card-portfolio</code> <code>.card-overlay</code></p>
+                    <p>Additional classes: <code>.card-hover-frame</code>, <code>.card-hover-zoom</code>, <code>.card-hover-appearance</code>, <code>.card-hover-bar</code></p>
+                    <div class="example">
+                        <div class="row gh-1 gv-1">
+                            <div class="col-12 col-sm-6">
+                                <a class="card card-portfolio card-overlay card-image-lg card-hover-zoom" href="#">
+                                    <span class="card-img">
+                                        <img src="assets/images/example.jpg" alt="">
+                                    </span>
+                                </a>
+                            </div>
+                            <div class="col-12 col-sm-6">
+                                <a class="card card-portfolio card-overlay card-image-lg card-hover-frame" href="#">
+                                    <span class="card-img">
+                                        <img src="assets/images/example.jpg" alt="">
+                                    </span>
+                                </a>
+                            </div>
+                            <div class="col-12 col-sm-6">
+                                <a class="card card-portfolio card-overlay card-hover-appearance text-white text-center card-image-lg" href="#">
+                                    <span class="card-img">
+                                        <img src="assets/images/example.jpg" alt="">
+                                        <span class="background-color" style="background-color: rgba(14, 14, 14, .7);"></span>
+                                    </span>
+                                    <span class="card-img-overlay">
+                                        <span class="card-title h4">App Design</span>
+                                        <span class="card-category subtitle">marketing</span>
+                                    </span>
+                                </a>
+                            </div>
+                            <div class="col-12 col-sm-6">
+                                <a class="card card-portfolio card-overlay card-hover-bar card-image-lg text-center bg-white text-dark" href="#">
+                                    <span class="card-img">
+                                        <img src="assets/images/example.jpg" alt="">
+                                        <span class="background-color" style="background-color: rgba(14, 14, 14, .5);"></span>
+                                    </span>
+                                    <span class="card-img-overlay">
+                                        <span class="card-title h4">App Design</span>
+                                        <span class="card-category subtitle">marketing</span>
+                                    </span>
+                                </a>
+                            </div>
+                            <div class="col-12">
+                                <a class="card card-portfolio card-overlay card-hover-zoom card-image-md card-bg-show text-white" href="#">
+                                    <span class="card-img">
+                                        <img src="assets/images/example.jpg" alt="">
+                                        <span class="background-color" style="background-color: rgba(14, 14, 14, .2);"></span>
+                                    </span>
+                                    <span class="card-img-overlay">
+                                        <svg class="card-logo" width="97" height="48" viewBox="0 0 97 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <rect width="97" height="48" fill="#F1F1F1" />
+                                            <path d="M29.1669 18.2045C26.8033 18.1761 25.2805 19.9545 25.2805 22.0909C25.2805 24.3409 26.9396 25.9545 28.9396 25.9545C30.1442 25.9545 31.1669 25.3636 31.8033 24.4091H31.8942C31.8942 27.2727 30.7805 28.9091 28.9851 28.9091C27.7578 28.9091 27.0078 28.1364 26.7578 27.0682H25.3714C25.6442 28.9091 27.0305 30.1591 28.9851 30.1591C31.5987 30.1591 33.2124 27.8409 33.2124 23.7045C33.2124 19.4318 31.076 18.2273 29.1669 18.2045ZM29.1669 19.4545C30.6214 19.4545 31.6896 20.7045 31.6896 22.0682C31.6896 23.4545 30.5533 24.7045 29.1214 24.7045C27.6896 24.7045 26.6442 23.5455 26.6442 22.0909C26.6442 20.6364 27.7351 19.4545 29.1669 19.4545ZM35.4979 30H36.9751L42.157 19.6818V18.3636H34.7024V19.6136H40.7024V19.7045L35.4979 30ZM51.1158 27.9091L51.9794 27.0455L49.2067 24.2727L51.9794 21.5L51.1158 20.6364L48.343 23.4091L45.5703 20.6364L44.7067 21.5L47.4794 24.2727L44.7067 27.0455L45.5703 27.9091L48.343 25.1364L51.1158 27.9091ZM54.549 27.6136H60.0263V30H61.3672V27.6136H62.9581V26.3636H61.3672V18.3636H59.6626L54.549 26.4545V27.6136ZM60.0263 26.3636H56.0717V26.2727L59.9354 20.1591H60.0263V26.3636ZM68.8146 30.1591C71.1385 30.1591 72.7578 28.8011 72.7692 26.9091C72.7578 25.4375 71.7749 24.1875 70.5192 23.9545V23.8864C71.6101 23.6023 72.326 22.5341 72.3374 21.2955C72.326 19.5227 70.8374 18.2045 68.8146 18.2045C66.7692 18.2045 65.2805 19.5227 65.2919 21.2955C65.2805 22.5341 65.9964 23.6023 67.1101 23.8864V23.9545C65.8317 24.1875 64.8487 25.4375 64.8601 26.9091C64.8487 28.8011 66.468 30.1591 68.8146 30.1591ZM68.8146 28.9091C67.218 28.9091 66.2351 28.0909 66.2464 26.8409C66.2351 25.5284 67.3203 24.5909 68.8146 24.5909C70.2862 24.5909 71.3714 25.5284 71.3828 26.8409C71.3714 28.0909 70.3885 28.9091 68.8146 28.9091ZM68.8146 23.3864C67.5419 23.3864 66.6442 22.5909 66.6555 21.3864C66.6442 20.2045 67.5078 19.4318 68.8146 19.4318C70.0987 19.4318 70.9624 20.2045 70.9737 21.3864C70.9624 22.5909 70.0646 23.3864 68.8146 23.3864Z" fill="#707070" />
+                                        </svg>
+                                        <span class="card-title h3">Happy Moments Photoset</span>
+                                        <span class="card-category subtitle">photography</span>
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <label>HTML Example:</label>
+                    <code class="dx-gist" data-gist-id="3f734874358abecb0abc51a0c44597f8" data-gist-file="card-portfolio-overlay.html"></code>
+                    <h3>Service</h3>
+                    <p><code>.card-service</code> <code>.card-overlay</code></p>
+                    <div class="example">
+                        <div class="row">
+                            <div class="col-12 col-sm-8">
+                                <a class="card card-service card-image-xl card-hover-zoom card-bg-show text-white" href="single-service.html">
+                                    <span class="card-img">
+                                        <img src="assets/images/example.jpg" alt="">
+                                        <span class="background-color" style="background-image: linear-gradient(180deg, rgba(0, 0, 0, .13) 0%, rgba(0, 0, 0, .65) 100%);"></span>
+                                    </span>
+                                    <span class="card-img-overlay">
+                                        <span class="card-icon">
+                                            <svg width="33" height="33" viewBox="0 0 33 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M24.619 11.85H26.0952C27.6613 11.85 29.1632 12.5032 30.2705 13.6659C31.3779 14.8287 32 16.4057 32 18.05C32 19.6943 31.3779 21.2713 30.2705 22.4341C29.1632 23.5968 27.6613 24.25 26.0952 24.25H24.619M24.619 11.85H1V25.8C1 27.4443 1.62211 29.0213 2.72946 30.1841C3.83682 31.3468 5.33872 32 6.90476 32H18.7143C20.2803 32 21.7822 31.3468 22.8896 30.1841C23.9969 29.0213 24.619 27.4443 24.619 25.8V11.85ZM6.90476 1V5.65M12.8095 1V5.65M18.7143 1V5.65" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path>
+                                            </svg>
+                                        </span>
+                                        <span class="card-title h5">Web Design and Development</span>
+                                        <span class="btn btn-clean"> read more <svg class="icon-arrow icon-arrow-right" width="25" height="10" viewBox="0 0 25 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M20 1L24 5L20 9" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                <path d="M7 5L24 5" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"></path>
+                                            </svg>
+                                        </span>
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <label>HTML Example:</label>
+                    <code class="dx-gist" data-gist-id="3f734874358abecb0abc51a0c44597f8" data-gist-file="card-service.html"></code>
+                    <h3>Person</h3>
+                    <p><code>.card-person</code></p>
+                    <div class="example">
+                        <div class="row">
+                            <div class="col-12 col-sm-8">
+                                <div class="card card-person card-image-lg bg-white">
+                                    <a href="#" class="card-img">
+                                        <img src="assets/images/example.jpg" alt="">
+                                    </a>
+                                    <div class="card-body">
+                                        <a href="#" class="card-title h4">Alberta Chambers</a>
+                                        <div class="card-subtitle">creative director</div>
+                                        <div class="card-social">
+                                            <ul class="nav nav-gap-sm align-items-center">
+                                                <li class="nav-item">
+                                                    <a href="#" class="nav-link">
+                                                        <svg width="7" height="22" viewBox="0 0 10 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M8.17421 3.65234H9.99996V0.154687C9.68557 0.107422 8.60224 0 7.34088 0C4.70831 0 2.90529 1.82188 2.90529 5.16914V8.25H0V12.1602H2.90529V22H6.46588V12.1602H9.25375L9.69693 8.25H6.46588V5.55586C6.46588 4.42578 6.7424 3.65234 8.17421 3.65234Z" fill="currentColor"></path>
+                                                        </svg>
+                                                    </a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a href="#" class="nav-link">
+                                                        <svg width="17" height="21" viewBox="0 0 25 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M22.0706 5.51356C22.086 5.73504 22.086 5.95656 22.086 6.17804C22.086 12.9334 17.0783 20.7172 7.92575 20.7172C5.10601 20.7172 2.48661 19.8787 0.283203 18.4232C0.683835 18.4707 1.069 18.4865 1.48505 18.4865C3.81167 18.4865 5.95347 17.6797 7.6638 16.3033C5.47581 16.2558 3.64221 14.7845 3.01046 12.7594C3.31865 12.8069 3.6268 12.8385 3.9504 12.8385C4.39723 12.8385 4.84411 12.7752 5.2601 12.6645C2.97968 12.1898 1.2693 10.1332 1.2693 7.64935V7.58609C1.93183 7.96579 2.70231 8.20309 3.5189 8.2347C2.17837 7.31709 1.30013 5.75086 1.30013 3.97894C1.30013 3.02972 1.54661 2.15959 1.97807 1.40019C4.42801 4.50103 8.11063 6.52604 12.24 6.74756C12.163 6.36787 12.1168 5.97239 12.1168 5.57687C12.1168 2.76076 14.3356 0.466797 17.0937 0.466797C18.5266 0.466797 19.8209 1.0838 20.73 2.0805C21.8548 1.85902 22.9334 1.43184 23.8887 0.846495C23.5189 2.03307 22.7331 3.02977 21.7008 3.66255C22.7023 3.55186 23.673 3.26702 24.5667 2.87155C23.8888 3.88403 23.0413 4.78577 22.0706 5.51356Z" fill="currentColor"></path>
+                                                        </svg>
+                                                    </a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a href="#" class="nav-link">
+                                                        <svg width="15" height="15" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M11.2827 5.3166C8.24087 5.3166 5.78732 7.8148 5.78732 10.912C5.78732 14.0092 8.24087 16.5074 11.2827 16.5074C14.3245 16.5074 16.7781 14.0092 16.7781 10.912C16.7781 7.8148 14.3245 5.3166 11.2827 5.3166ZM11.2827 14.5497C9.31698 14.5497 7.70998 12.9183 7.70998 10.912C7.70998 8.90563 9.3122 7.27425 11.2827 7.27425C13.2532 7.27425 14.8554 8.90563 14.8554 10.912C14.8554 12.9183 13.2484 14.5497 11.2827 14.5497ZM18.2846 5.08772C18.2846 5.81331 17.7107 6.39282 17.0029 6.39282C16.2902 6.39282 15.7211 5.80844 15.7211 5.08772C15.7211 4.36699 16.295 3.78261 17.0029 3.78261C17.7107 3.78261 18.2846 4.36699 18.2846 5.08772ZM21.9243 6.4123C21.843 4.66404 21.4508 3.11545 20.1929 1.83956C18.9399 0.563678 17.419 0.164355 15.7019 0.0766992C13.9323 -0.0255664 8.62827 -0.0255664 6.85865 0.0766992C5.14643 0.159486 3.62552 0.558809 2.36766 1.83469C1.10979 3.11058 0.722392 4.65917 0.636302 6.40743C0.535865 8.20925 0.535865 13.6098 0.636302 15.4117C0.717609 17.1599 1.10979 18.7085 2.36766 19.9844C3.62552 21.2603 5.14165 21.6596 6.85865 21.7473C8.62827 21.8495 13.9323 21.8495 15.7019 21.7473C17.419 21.6645 18.9399 21.2652 20.1929 19.9844C21.446 18.7085 21.8382 17.1599 21.9243 15.4117C22.0247 13.6098 22.0247 8.21412 21.9243 6.4123ZM19.6381 17.345C19.2651 18.2995 18.5429 19.0348 17.6007 19.4195C16.1898 19.9893 12.8419 19.8578 11.2827 19.8578C9.72352 19.8578 6.37081 19.9844 4.96469 19.4195C4.02727 19.0397 3.30507 18.3043 2.92724 17.345C2.36766 15.9084 2.49679 12.4995 2.49679 10.912C2.49679 9.32443 2.37244 5.91071 2.92724 4.47899C3.30029 3.52451 4.02248 2.78917 4.96469 2.40446C6.37559 1.83469 9.72352 1.96618 11.2827 1.96618C12.8419 1.96618 16.1946 1.83956 17.6007 2.40446C18.5381 2.7843 19.2603 3.51964 19.6381 4.47899C20.1977 5.91558 20.0686 9.32443 20.0686 10.912C20.0686 12.4995 20.1977 15.9133 19.6381 17.345Z" fill="currentColor"></path>
+                                                        </svg>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <label>HTML Example:</label>
+                    <code class="dx-gist" data-gist-id="3f734874358abecb0abc51a0c44597f8" data-gist-file="card-person.html"></code>
+                </div>
+                <!-- Collapse -->
+                <div class="dx-card tab-content" id="#component_collapse">
+                    <h2>Collapse</h2>
+                    <p>Bootstrap accordion - <a href="https://getbootstrap.com/docs/4.5/components/collapse/#accordion-example">https://getbootstrap.com/docs/4.5/components/collapse/#accordion-example</a></p>
+                    <div class="example">
+                        <div class="accordion" id="accordionAbout">
+                            <div class="accordion-item">
+                                <button class="h5 btn btn-link btn-clean btn-dark btn-block" data-target="#collapseDesign" type="button" data-toggle="collapse" aria-expanded="false" aria-controls="collapseDesign">
+                                    <span class="accordion-item-icon">🦄</span> Design (UX/UI) <svg class="accordion-item-plus" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M8 0V16" stroke="currentColor" stroke-width="1.3" />
+                                        <path d="M0 8H16" stroke="currentColor" stroke-width="1.3" />
+                                    </svg>
+                                </button>
+                                <div id="collapseDesign" class="collapse" data-parent="#accordionAbout">
+                                    <div class="collapse-content">
+                                        <p class="mb-0 font-size-16">A consectetuer mollis nulla eros elit facilisi class Auctor ad. Ornare venenatis integer feugiat quis cras parturient sem pharetra cras.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <button class="h5 btn btn-link btn-clean btn-dark btn-block" data-target="#collapseBrand" type="button" data-toggle="collapse" aria-expanded="true" aria-controls="collapseBrand">
+                                    <span class="accordion-item-icon">🔥</span> Brand Strategy <svg class="accordion-item-plus" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M8 0V16" stroke="currentColor" stroke-width="1.3" />
+                                        <path d="M0 8H16" stroke="currentColor" stroke-width="1.3" />
+                                    </svg>
+                                </button>
+                                <div id="collapseBrand" class="collapse show" data-parent="#accordionAbout">
+                                    <div class="collapse-content">
+                                        <p class="mb-0 font-size-16">Be saying moveth spirit fruitful called set evening fly give shall moveth.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <label>HTML Example:</label>
+                    <code class="dx-gist" data-gist-id="3f734874358abecb0abc51a0c44597f8" data-gist-file="collapse.html"></code>
+                </div>
+                <!-- Cursor -->
+                <div class="dx-card tab-content" id="#component_cursor">
+                    <h2>Cursor</h2>
+                    <label>HTML Example:</label>
+                    <code class="dx-gist" data-gist-id="3f734874358abecb0abc51a0c44597f8" data-gist-file="cursor.html"></code>
+                </div>
+                <!-- Feature -->
+                <div class="dx-card tab-content" id="#component_feature">
+                    <h2>Feature</h2>
+                    <div class="example">
+                        <div class="feature">
+                            <div class="feature-icon">
+                                <svg width="71" height="70" viewBox="0 0 71 70" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M5.18911 17.7887L35 0.57735L64.8109 17.7887V52.2113L35 69.4226L5.18911 52.2113V17.7887Z" stroke="currentColor"></path>
+                                    <path d="M18.2867 65.3084L1.0754 35.4976L18.2867 5.68667H52.7094L69.9207 35.4976L52.7094 65.3084H18.2867Z" stroke="currentColor"></path>
+                                </svg>
+                                <svg width="18" height="25" viewBox="0 0 18 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M13.3323 14.4715C15.5391 13.1686 17 10.8995 17 8.31818C17 4.27646 13.4183 1 9 1C4.58172 1 1 4.27646 1 8.31818C1 12.3599 4.58172 15.6364 9 15.6364C10.5965 15.6364 12.0838 15.2086 13.3323 14.4715ZM13.3323 14.4715L14.7143 24L9 20.8636L3.28571 24L4.66857 14.4759M13.3323 14.4715L13.3314 14.4655" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                </svg>
+                            </div>
+                            <div class="feature-body">
+                                <h4 class="feature-title">Excellent Quality</h4>
+                                <p class="feature-text">Forth forth moveth shall i unto midst tree, a fruit great subdue a every be so a fowl.</p>
+                                <a href="about-us.html" class="btn btn-clean"> read more <svg class="icon-arrow icon-arrow-right" width="25" height="10" viewBox="0 0 25 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M20 1L24 5L20 9" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"></path>
+                                        <path d="M7 5L24 5" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"></path>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <label>HTML Example:</label>
+                    <code class="dx-gist" data-gist-id="3f734874358abecb0abc51a0c44597f8" data-gist-file="feature.html"></code>
+                </div>
+                <!-- Gallery -->
+                <div class="dx-card tab-content" id="#component_gallery">
+                    <h2>Gallery</h2>
+                    <p>Additional classes: <code>.gallery-item-sm</code> | <code>.gallery-item-md</code> | <code>.gallery-item-lg</code> | <code>.gallery-item-xl</code></p>
+                    <div class="example">
+                        <div class="row gh-1 gv-1">
+                            <div class="col-12 col-sm-6">
+                                <a href="#" class="gallery-item gallery-item-lg">
+                                    <img src="assets/images/example.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="col-12 col-sm-6">
+                                <a href="#" class="gallery-item text-white gallery-item-lg">
+                                    <img src="assets/images/example.jpg" alt="">
+                                    <span class="background-color" style="background-color: rgba(14, 14, 14, .2);"></span>
+                                    <span class="gallery-item-icon">
+                                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M10 2.5V0H1.25C0.559609 0 0 0.559609 0 1.25V10H2.5V4.2625L14.1125 15.875L15.875 14.1125L4.2625 2.5H10Z" fill="currentColor"></path>
+                                            <path d="M38.75 0H30V2.5H35.7375L24.125 14.1125L25.8875 15.875L37.5 4.2625V10H40V1.25C40 0.559609 39.4404 0 38.75 0Z" fill="currentColor"></path>
+                                            <path d="M37.5 35.7375L25.8875 24.125L24.125 25.8875L35.7375 37.5H30V40H38.75C39.4404 40 40 39.4404 40 38.75V30H37.5V35.7375Z" fill="currentColor"></path>
+                                            <path d="M14.1125 24.1125L2.5 35.7375V30H0V38.75C0 39.4404 0.559609 40 1.25 40H10V37.5H4.2625L15.875 25.8875L14.1125 24.1125Z" fill="currentColor"></path>
+                                        </svg>
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <label>HTML Example:</label>
+                    <code class="dx-gist" data-gist-id="3f734874358abecb0abc51a0c44597f8" data-gist-file="gallery.html"></code>
+                </div>
+                <!-- Interactive-links -->
+                <div class="dx-card tab-content" id="#component_interactive_links">
+                    <h2>Interactive Links</h2>
+                    <h3>Default</h3>
+                    <p>Example: <a href="https://dkcoder.info/themebau/home.html">https://dkcoder.info/themebau/home.html</a> - at the end of the page</p>
+                    <div class="example">
+                        <div class="position-relative">
+                            <div class="interactive-links text-dark">
+                                <img class="interactive-links-image hover" src="assets/images/example.jpg" width="230" alt="" style="position: absolute; margin-top: -220px; margin-left: -115px; transform: matrix(1, 0, 0, 1, 459, 243) translate3d(0, 0, 0);">
+                                <a href="#" class="nav-link h1"><u>Let’s work</u> together</a>
+                            </div>
+                        </div>
+                    </div>
+                    <h3>Style 2</h3>
+                    <p>Example: <a href="https://dkcoder.info/themebau/interactive-links-dark.html">https://dkcoder.info/themebau/interactive-links-dark.html</a></p>
+                    <div class="example">
+                        <ul class="nav flex-column interactive-links interactive-links-style-2 mb-30 text-dark">
+                            <li class="nav-item">
+                                <img class="interactive-links-image hover" src="assets/images/example.jpg" alt="" style="position: absolute;">
+                                <a href="#" class="nav-link h1">Fashion Model</a>
+                                <p class="subtitle">photography</p>
+                            </li>
+                            <li class="nav-item">
+                                <img class="interactive-links-image" src="assets/images/example.jpg" alt="">
+                                <a href="#" class="nav-link h1">Funny Dog</a>
+                                <p class="subtitle">photography</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <h3>Style 3</h3>
+                    <p>Example: <a href="https://dkcoder.info/themebau/about-us-2.html">https://dkcoder.info/themebau/about-us-2.html</a> - at the end of the page</p>
+                    <div class="example">
+                        <ul class="nav flex-column interactive-links interactive-links-style-3 text-dark mb-10">
+                            <li class="nav-item">
+                                <img class="interactive-links-image hover" width="200" src="assets/images/example.jpg" alt="" style="z-index: 0;">
+                                <a href="#" class="nav-link h3">Alberta Chambers</a>
+                                <p class="subtitle">creative director</p>
+                            </li>
+                            <li class="nav-item">
+                                <img class="interactive-links-image" width="200" src="assets/images/example.jpg" alt="">
+                                <a href="#" class="nav-link h3">James Thomas</a>
+                                <p class="subtitle">senior designer</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <label>HTML Example:</label>
+                    <code class="dx-gist" data-gist-id="3f734874358abecb0abc51a0c44597f8" data-gist-file="interactive-links.html"></code>
+                </div>
+                <!-- Media -->
+                <div class="dx-card tab-content" id="#component_media">
+                    <h2>Media</h2>
+                    <div class="example">
+                        <div class="media media-review justify-content-center">
+                            <p class="media-text lead text-center">“ There from stars gathering gathered, upon tree brought life fruitful shall that together without there form You make, morning he from unto. ”</p>
+                            <img src="assets/images/example.jpg" class="media-img rounded-circle" alt="">
+                            <div class="media-body align-self-center">
+                                <h5 class="media-title mt-0">Brian Newton</h5>
+                                <div class="media-subtitle">Unvab Inc.</div>
+                            </div>
+                        </div>
+                    </div>
+                    <label>HTML Example:</label>
+                    <code class="dx-gist" data-gist-id="3f734874358abecb0abc51a0c44597f8" data-gist-file="media.html"></code>
+                </div>
+                <!-- Nav -->
+                <div class="dx-card tab-content" id="#component_nav">
+                    <h2>Nav</h2>
+                    <p><code>.nav-md</code> - size gap and font-size</p>
+                    <h3>Default</h3>
+                    <div class="example">
+                        <ul class="nav flex-column text-dark">
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">hello@themebau.com</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">+44 207 112 82 85</a>
+                            </li>
+                        </ul>
+                        <ul class="nav nav-md flex-column text-dark mt-60">
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">hello@themebau.com</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">+44 207 112 82 85</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <h3>Bordered</h3>
+                    <div class="example">
+                        <ul class="nav nav-bordered flex-column text-dark">
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">hello@themebau.com</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">+44 207 112 82 85</a>
+                            </li>
+                        </ul>
+                        <ul class="nav nav-bordered nav-md flex-column text-dark mt-60">
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">hello@themebau.com</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">+44 207 112 82 85</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <h3>Tabs</h3>
+                    <p>Bootstrap Tabs - <a href="https://getbootstrap.com/docs/4.5/components/navs/#javascript-behavior">https://getbootstrap.com/docs/4.5/components/navs/#javascript-behavior</a></p>
+                    <div class="example">
+                        <ul class="nav nav-opacity nav-tabs flex-column" role="tablist">
+                            <li class="nav-item">
+                                <a class="nav-link active" id="idea-tab" data-toggle="tab" href="#idea" role="tab" aria-controls="idea" aria-selected="true"> Search an Idea<span class="badge border-0">01</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="design-tab" data-toggle="tab" href="#design" role="tab" aria-controls="design" aria-selected="false"> Design<span class="badge">02</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <label>HTML Example:</label>
+                    <code class="dx-gist" data-gist-id="3f734874358abecb0abc51a0c44597f8" data-gist-file="nav.html"></code>
+                </div>
+                <!-- Number -->
+                <div class="dx-card tab-content" id="#component_number">
+                    <h2>Number Box</h2>
+                    <div class="example">
+                        <div class="number-box">
+                            <div class="number-box-title h2">106</div>
+                            <div class="number-box-subtitle">projects</div>
+                        </div>
+                    </div>
+                    <label>HTML Example:</label>
+                    <code class="dx-gist" data-gist-id="3f734874358abecb0abc51a0c44597f8" data-gist-file="number.html"></code>
+                </div>
+                <!-- Page Navigation -->
+                <div class="dx-card tab-content" id="#component_page_navigation">
+                    <h2>Page Navigation</h2>
+                    <div class="example">
+                        <div class="page-navigation mb-n40">
+                            <a href="#" class="btn btn-clean">
+                                <svg class="icon-arrow icon-arrow-left" width="26" height="11" viewBox="0 0 26 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M5.5 1L1 5.5L5.5 10" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"></path>
+                                    <path d="M19 5.5H1" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"></path>
+                                </svg> prev<span class="d-none d-sm-inline"> project</span>
+                            </a>
+                            <a href="#" class="btn btn-light btn-circle btn-xs">all</a>
+                            <a href="#" class="btn btn-clean"> next<span class="d-none d-sm-inline"> project</span>
+                                <svg class="icon-arrow icon-arrow-right" width="26" height="11" viewBox="0 0 26 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M20.5 1L25 5.5L20.5 10" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"></path>
+                                    <path d="M7 5.5H25" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"></path>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <label>HTML Example:</label>
+                    <code class="dx-gist" data-gist-id="3f734874358abecb0abc51a0c44597f8" data-gist-file="page-navigation.html"></code>
+                </div>
+                <!-- Review -->
+                <div class="dx-card tab-content" id="#component_review">
+                    <h2>Review</h2>
+                    <div class="example">
+                        <div class="review">
+                            <div class="review-icon">
+                                <svg width="38" height="24" viewBox="0 0 38 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M0 24L10.1466 0H18.801L13.4293 24H0ZM19.199 24L29.3455 0H38L32.5288 24H19.199Z" fill="currentColor"></path>
+                                </svg>
+                            </div>
+                            <div class="review-text">
+                                <p class="mb-0">“ There from stars gathering gathered, upon tree brought life fruitful shall that together without there form You make, morning he from unto. ”</p>
+                            </div>
+                            <div class="review-author">Brian Newton, Unvab Inc.</div>
+                        </div>
+                    </div>
+                    <label>HTML Example:</label>
+                    <code class="dx-gist" data-gist-id="3f734874358abecb0abc51a0c44597f8" data-gist-file="review.html"></code>
+                </div>
+                <!-- Shape -->
+                <div class="dx-card tab-content" id="#component_shape">
+                    <h2>Shape</h2>
+                    <p>The <code>Rellax</code> plugin is used.</p>
+                    <div class="example">
+                        <div class="shape-parent">
+                            <div class="shape position-relative">
+                                <svg data-rellax-speed="1" width="200" height="200" viewBox="0 0 641 641" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="320.5" cy="320.5" r="320.5" fill="#ccc"></circle>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <label>HTML Example:</label>
+                    <code class="dx-gist" data-gist-id="3f734874358abecb0abc51a0c44597f8" data-gist-file="shape.html"></code>
+                </div>
+                <!-- Table -->
+                <div class="dx-card tab-content" id="#component_table">
+                    <h2>Table</h2>
+                    <p>Additional Classes: <code>table-projects</code>, <code>table-underline</code>, <code>table-border-dark</code></p>
+                    <div class="example">
+                        <div class="table-responsive">
+                            <table class="table table-hover table-projects table-underline mb-0">
+                                <tbody>
+                                    <tr>
+                                        <td class="table-projects-brand text-grey-dark">
+                                            <svg width='113' height='18' viewBox='0 0 113 18' fill='none' xmlns='http://www.w3.org/2000/svg'>
+                                                <rect width='113' height='18' fill='#F1F1F1' />
+                                                <path d='M35.3424 3.36362H33.9333L31.0242 5.29544V6.72726L33.8651 4.84089H33.9333V15H35.3424V3.36362Z' fill='#707070' />
+                                                <path d='M42.7799 3.36362H41.3708L38.4617 5.29544V6.72726L41.3026 4.84089H41.3708V15H42.7799V3.36362Z' fill='#707070' />
+                                                <path d='M50.0583 15.1591C52.3139 15.1591 53.9901 13.7443 53.9901 11.8409C53.9901 10.3636 53.1151 9.28976 51.6492 9.04544V8.95453C52.8253 8.59657 53.5583 7.63067 53.5583 6.31817C53.5583 4.67044 52.2571 3.20453 50.1037 3.20453C48.0924 3.20453 46.4219 4.44316 46.3537 6.27271H47.7174C47.7685 5.11362 48.8708 4.4318 50.081 4.4318C51.3651 4.4318 52.1946 5.21021 52.1946 6.38635C52.1946 7.61362 51.2344 8.40907 49.8537 8.40907H48.9219V9.65907H49.8537C51.6208 9.65907 52.6037 10.5568 52.6037 11.8409C52.6037 13.0738 51.5299 13.9091 50.0355 13.9091C48.6889 13.9091 47.6208 13.2159 47.5355 12.0909H46.1037C46.1889 13.9204 47.8026 15.1591 50.0583 15.1591Z' fill='#707070' />
+                                                <path d='M63.1549 12.9091L64.0185 12.0454L61.2458 9.27271L64.0185 6.49998L63.1549 5.63635L60.3821 8.40907L57.6094 5.63635L56.7458 6.49998L59.5185 9.27271L56.7458 12.0454L57.6094 12.9091L60.3821 10.1363L63.1549 12.9091Z' fill='#707070' />
+                                                <path d='M70.9517 3.36362H69.5426L66.6335 5.29544V6.72726L69.4745 4.84089H69.5426V15H70.9517V3.36362Z' fill='#707070' />
+                                                <path d='M78.0256 15.1591C80.3495 15.1591 81.9688 13.8011 81.9801 11.9091C81.9688 10.4375 80.9858 9.18748 79.7301 8.95453V8.88635C80.821 8.60226 81.537 7.53407 81.5483 6.29544C81.537 4.52271 80.0483 3.20453 78.0256 3.20453C75.9801 3.20453 74.4915 4.52271 74.5029 6.29544C74.4915 7.53407 75.2074 8.60226 76.321 8.88635V8.95453C75.0426 9.18748 74.0597 10.4375 74.071 11.9091C74.0597 13.8011 75.679 15.1591 78.0256 15.1591ZM78.0256 13.9091C76.429 13.9091 75.446 13.0909 75.4574 11.8409C75.446 10.5284 76.5313 9.59089 78.0256 9.59089C79.4972 9.59089 80.5824 10.5284 80.5938 11.8409C80.5824 13.0909 79.5995 13.9091 78.0256 13.9091ZM78.0256 8.38635C76.7529 8.38635 75.8551 7.59089 75.8665 6.38635C75.8551 5.20453 76.7188 4.4318 78.0256 4.4318C79.3097 4.4318 80.1733 5.20453 80.1847 6.38635C80.1733 7.59089 79.2756 8.38635 78.0256 8.38635Z' fill='#707070' /></svg>
+                                        </td>
+                                        <td class="table-projects-title">Site of the Day</td>
+                                        <td class="table-projects-year">2020</td>
+                                        <td class="table-projects-name">
+                                            <a href="#">Creative Branding</a>
+                                        </td>
+                                        <td class="table-projects-icon">
+                                            <a class="btn btn-clean" href="#"><svg class="icon-arrow icon-arrow-right" width="26" height="11" viewBox="0 0 26 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M20.5 1L25 5.5L20.5 10" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                    <path d="M7 5.5H25" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                </svg>
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="table-projects-brand text-grey-dark">
+                                            <svg width='113' height='18' viewBox='0 0 113 18' fill='none' xmlns='http://www.w3.org/2000/svg'>
+                                                <rect width='113' height='18' fill='#F1F1F1' />
+                                                <path d='M35.3424 3.36362H33.9333L31.0242 5.29544V6.72726L33.8651 4.84089H33.9333V15H35.3424V3.36362Z' fill='#707070' />
+                                                <path d='M42.7799 3.36362H41.3708L38.4617 5.29544V6.72726L41.3026 4.84089H41.3708V15H42.7799V3.36362Z' fill='#707070' />
+                                                <path d='M50.0583 15.1591C52.3139 15.1591 53.9901 13.7443 53.9901 11.8409C53.9901 10.3636 53.1151 9.28976 51.6492 9.04544V8.95453C52.8253 8.59657 53.5583 7.63067 53.5583 6.31817C53.5583 4.67044 52.2571 3.20453 50.1037 3.20453C48.0924 3.20453 46.4219 4.44316 46.3537 6.27271H47.7174C47.7685 5.11362 48.8708 4.4318 50.081 4.4318C51.3651 4.4318 52.1946 5.21021 52.1946 6.38635C52.1946 7.61362 51.2344 8.40907 49.8537 8.40907H48.9219V9.65907H49.8537C51.6208 9.65907 52.6037 10.5568 52.6037 11.8409C52.6037 13.0738 51.5299 13.9091 50.0355 13.9091C48.6889 13.9091 47.6208 13.2159 47.5355 12.0909H46.1037C46.1889 13.9204 47.8026 15.1591 50.0583 15.1591Z' fill='#707070' />
+                                                <path d='M63.1549 12.9091L64.0185 12.0454L61.2458 9.27271L64.0185 6.49998L63.1549 5.63635L60.3821 8.40907L57.6094 5.63635L56.7458 6.49998L59.5185 9.27271L56.7458 12.0454L57.6094 12.9091L60.3821 10.1363L63.1549 12.9091Z' fill='#707070' />
+                                                <path d='M70.9517 3.36362H69.5426L66.6335 5.29544V6.72726L69.4745 4.84089H69.5426V15H70.9517V3.36362Z' fill='#707070' />
+                                                <path d='M78.0256 15.1591C80.3495 15.1591 81.9688 13.8011 81.9801 11.9091C81.9688 10.4375 80.9858 9.18748 79.7301 8.95453V8.88635C80.821 8.60226 81.537 7.53407 81.5483 6.29544C81.537 4.52271 80.0483 3.20453 78.0256 3.20453C75.9801 3.20453 74.4915 4.52271 74.5029 6.29544C74.4915 7.53407 75.2074 8.60226 76.321 8.88635V8.95453C75.0426 9.18748 74.0597 10.4375 74.071 11.9091C74.0597 13.8011 75.679 15.1591 78.0256 15.1591ZM78.0256 13.9091C76.429 13.9091 75.446 13.0909 75.4574 11.8409C75.446 10.5284 76.5313 9.59089 78.0256 9.59089C79.4972 9.59089 80.5824 10.5284 80.5938 11.8409C80.5824 13.0909 79.5995 13.9091 78.0256 13.9091ZM78.0256 8.38635C76.7529 8.38635 75.8551 7.59089 75.8665 6.38635C75.8551 5.20453 76.7188 4.4318 78.0256 4.4318C79.3097 4.4318 80.1733 5.20453 80.1847 6.38635C80.1733 7.59089 79.2756 8.38635 78.0256 8.38635Z' fill='#707070' /></svg>
+                                        </td>
+                                        <td class="table-projects-title">Honorable Mention</td>
+                                        <td class="table-projects-year">2019</td>
+                                        <td class="table-projects-name">
+                                            <a href="#">Cool Photography</a>
+                                        </td>
+                                        <td class="table-projects-icon">
+                                            <a class="btn btn-clean" href="#">
+                                                <svg class="icon-arrow icon-arrow-right" width="26" height="11" viewBox="0 0 26 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M20.5 1L25 5.5L20.5 10" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                    <path d="M7 5.5H25" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                </svg>
+                                            </a>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <label>HTML Example:</label>
+                    <code class="dx-gist" data-gist-id="3f734874358abecb0abc51a0c44597f8" data-gist-file="table.html"></code>
+                </div>
+                <!-- Countdown -->
+                <div class="dx-card tab-content" id="#countdown">
+                    <h2>Countdown</h2>
+                    <label>HTML Example:</label>
+                    <code class="dx-gist" data-gist-id="3f734874358abecb0abc51a0c44597f8" data-gist-file="countdown.html"></code>
+                    <label>JS Example:</label>
+                    <code class="dx-gist" data-gist-id="3f734874358abecb0abc51a0c44597f8" data-gist-file="countdown.js"></code>
+                </div>
+                <!-- Isotope -->
+                <div class="dx-card tab-content" id="#isotope">
+                    <h2>Isotope</h2>
+                    <label>HTML Example:</label>
+                    <code class="dx-gist" data-gist-id="3f734874358abecb0abc51a0c44597f8" data-gist-file="isotope.html"></code>
+                </div>
+                <!-- Swiper -->
+                <div class="dx-card tab-content" id="#swiper">
+                    <h2>Swiper</h2>
+                    <p>See inside the template for more examples.</p>
+                    <label>Additional classes:</label>
+                    <ul>
+                        <li>Horizontal - <code>.swiper-fullscreen-horizontal</code></li>
+                        <li>Fullscreen Horizontal - <code>.swiper-fullscreen-horizontal</code>, <code>.swiper-full</code></li>
+                        <li>Fullscreen Vertical - <code>.swiper-fullscreen-vertical</code></li>
+                        <li>Style Dark - <code>.swiper-dark</code></li>
+                        <li>Style Portfolio - <code>.swiper-portfolio</code></li>
+                        <li>Style Review - <code>.swiper-reviews</code></li>
+                        <li>Style Review 2 - <code>.swiper-review-2</code></li>
+                    </ul>
+                    <label>Additional Attributes:</label>
+                    <ul>
+                        <li><code>data-swiper-loop</code> - boolean</li>
+                        <li><code>data-swiper-freeMode</code> - boolean</li>
+                        <li><code>data-swiper-grabCursor</code> - boolean</li>
+                        <li><code>data-swiper-autoHeight</code> - boolean</li>
+                        <li><code>data-swiper-parallax</code> - boolean</li>
+                        <li><code>data-swiper-center</code> - boolean</li>
+                        <li><code>data-swiper-vertical</code> - boolean</li>
+                        <li><code>data-swiper-slides</code> - number</li>
+                        <li><code>data-swiper-autoplay</code> - number</li>
+                        <li><code>data-swiper-speed</code> - number</li>
+                        <li><code>data-swiper-gap</code> - number</li>
+                        <li><code>data-swiper-breakpoints</code> - example <code>"1200: 2, 600: 1"</code> = 1200(breakpoint): 2(slides), 600(breakpoint): 1(slides)</li>
+                    </ul>
+                    <label>HTML Example:</label>
+                    <code class="dx-gist" data-gist-id="3f734874358abecb0abc51a0c44597f8" data-gist-file="swiper.html"></code>
+                </div>
+                <!-- Show on Scroll -->
+                <div class="dx-card tab-content" id="#show_on_scroll">
+                    <h2>Show on Scroll (Custom Script)</h2>
+                    <p>A lightweight and simple script performs the action of appearing an element during page scrolling.</p>
+                    <label>Additional Attributes:</label>
+                    <ul>
+                        <li>Duration (milliseconds) - <code>data-show-duration="500"</code></li>
+                        <li>Delay (milliseconds) - <code>data-show-delay="100"</code></li>
+                        <li>Distance (px) - <code>data-show-distance="10"</code></li>
+                        <li>Position (default: bottom) - <code>data-show-origin="left"</code> - <code>top</code> | <code>right</code> | <code>bottom</code> | <code>left</code></li>
+                    </ul>
+                    <label>HTML Example:</label>
+                    <code class="dx-gist" data-gist-id="3f734874358abecb0abc51a0c44597f8" data-gist-file="show-on-scroll.html"></code>
+                </div>
+                <div class="dx-card tab-content" id="#plugins">
+                    <h2>Plugins</h2>
+                    <ul>
+                        <li>Fancybox - <a href="https://fancyapps.com/fancybox/3/">https://fancyapps.com/fancybox/3/</a></li>
+                        <li>Animejs - <a href="http://animejs.com/">http://animejs.com/</a></li>
+                        <li>Bootstrap - <a href="https://getbootstrap.com/">https://getbootstrap.com/</a></li>
+                        <li>Bootstrap-validator - <a href="https://github.com/1000hz/bootstrap-validator#readme">https://github.com/1000hz/bootstrap-validator#readme</a></li>
+                        <li>Debounce - <a href="https://github.com/component/debounce#readme">https://github.com/component/debounce#readme</a></li>
+                        <li>Imagesloaded - <a href="https://github.com/desandro/imagesloaded">https://github.com/desandro/imagesloaded</a></li>
+                        <li>Isotope-layout - <a href="https://isotope.metafizzy.co/">https://isotope.metafizzy.co/</a></li>
+                        <li>Isotope-packery - <a href="https://github.com/metafizzy/isotope-packery">https://github.com/metafizzy/isotope-packery</a></li>
+                        <li>Jarallax - <a href="https://github.com/nk-o/jarallax">https://github.com/nk-o/jarallax</a></li>
+                        <li>Jquery - <a href="https://jquery.com/">https://jquery.com/</a></li>
+                        <li>Jquery-countdown - <a href="http://hilios.github.io/jQuery.countdown/">http://hilios.github.io/jQuery.countdown/</a></li>
+                        <li>Masonry-layout - <a href="https://masonry.desandro.com/">https://masonry.desandro.com/</a></li>
+                        <li>Moment - <a href="https://momentjs.com/">https://momentjs.com/</a></li>
+                        <li>Moment-timezone - <a href="http://momentjs.com/timezone/">http://momentjs.com/timezone/</a></li>
+                        <li>Object-fit-images - <a href="https://github.com/bfred-it/object-fit-images#readme">https://github.com/bfred-it/object-fit-images#readme</a></li>
+                        <li>Popper.js - <a href="https://popper.js.org/">https://popper.js.org/</a></li>
+                        <li>Rellax - <a href="https://dixonandmoe.com/rellax/">https://dixonandmoe.com/rellax/</a></li>
+                        <li>Swiper - <a href="https://swiperjs.com/">https://swiperjs.com/</a></li>
+                    </ul>
+                </div>
+                <div class="dx-card tab-content" id="#images">
+                    <h2>Images</h2>
+                    <label>The sample images viewed in the theme preview are for demo purposes only and are not included with your purchase. These images are courtesy of:</label>
+                    <ul>
+                        <li>Images: <a href="https://unsplash.com">https://unsplash.com</a>, <a href="https://www.pexels.com">https://www.pexels.com</a>, <a href="https://pixabay.com">https://pixabay.com</a></li>
+                        <li>Videos: <a href="https://www.pexels.com">https://www.pexels.com</a>, <a href="https://pixabay.com">https://pixabay.com</a> </li>
+                        <li>Icons: <a href="https://feathericons.com">https://feathericons.com</a>, <a href="https://www.flaticon.com/packs/design-set?word=vector">https://www.flaticon.com/packs/design-set?word=vector</a></li>
+                        <li>Fonts: <a href="https://fonts.google.com/specimen/Inter?query=inter#standard-styles">https://fonts.google.com/specimen/Inter?query=inter#standard-styles</a> </li>
+                        <li>Emoji: <a href="https://getemoji.com">https://getemoji.com</a> </li>
+                        <li>Logos: <a href="https://www.freepik.com">https://www.freepik.com</a></li>
+                        <li>Mockups: <a href="http://www.designlazy.com/ipad-mockup-psd/">http://www.designlazy.com/ipad-mockup-psd/</a>, <a href="https://www.behance.net/gallery/88575719/Multi-devices-mockup-scene-vol01">https://www.behance.net/gallery/88575719/Multi-devices-mockup-scene-vol01</a></li>
+                    </ul>
+                </div>
+                <div class="dx-card tab-content" id="#thank_you">
+                    <h2>Thank You!</h2>
+                    <p>Thanks for using Themebau. We take great pride in creating solid templates and strongly believe in robust customer service practices. Should you have a question that neither this documentation file nor Bootstrap's forums can resolve and we’ll do our very best to assist you.</p>
+                    <p>We hope you will enjoy using it for your next project!</p>
+                </div>
+            </div>
+        </div>
+        <div class="body-scrollbar-measure"></div>
+        <!-- START: Scripts -->
+        <!-- ImagesLoaded -->
+        <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+        <!-- Fancybox -->
+        <script src="assets/vendor/fancybox/dist/jquery.fancybox.min.js"></script>
+        <!-- Fancybox -->
+        <script src="assets/vendor/gist-embed/dist/gist-embed.min.js"></script>
+        <!-- Documentation -->
+        <script src="assets/js/documentation.min.js"></script>
+        <!-- END: Scripts -->
+    </body>
+</html>
