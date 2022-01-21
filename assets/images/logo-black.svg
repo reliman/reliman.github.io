@@ -3,15 +3,14 @@
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 100.7 16" style="enable-background:new 0 0 100.7 16;" xml:space="preserve">
 <style type="text/css">
-	.st0{fill:#FFFEFD;}
+	.st0{fill:#020100;}
 	.st1{font-family:'ArteriaStdCompress-Regular';}
 	.st2{font-size:17px;}
 </style>
 <g>
-	<path class="st0" d="M6.4,2.9l5.1,10.7H9.7l-3-6.3L6.4,6.6L6.1,7.3l-3,6.3H1.3L6.4,2.9 M6.4,2.1L0.7,14h2.6l3.1-6.5L9.5,14H12
-		L6.4,2.1L6.4,2.1z"/>
-	<path class="st0" d="M9.5,2.4l4,8.8l0.3,0.6l0.3-0.6l4.6-8.9h1.7l-0.1,11.2h-1.5V7.1V5.6L18,7l-3.3,6.6h-1.8L7.6,2.4H9.5 M9.7,2.1
-		H7L12.6,14h2.3l3.4-6.8V14h2.3l0.1-12h-2.3l-4.7,9.1L9.7,2.1L9.7,2.1z"/>
+	<path d="M6.4,2.9 M1.3,13.6 M6.7,7.3L6.4,6.6L6.1,7.3 M9.7,13.6 M6.4,2.9 M6.4,2.1L0.7,14h2.6l3.1-6.5L9.5,14H12L6.4,2.1L6.4,2.1z"
+		/>
+	<path d="M9.7,2.1H7L12.6,14h2.3l3.4-6.8V14h2.3l0.1-12h-2.3l-4.7,9.1L9.7,2.1z"/>
 </g>
 <text transform="matrix(1 0 0 1 24.5432 13.9664)" class="st0 st1 st2">AURELIA MANDANI</text>
 </svg>
