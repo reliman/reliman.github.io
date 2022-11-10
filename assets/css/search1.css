@@ -1,0 +1,8 @@
+@charset "UTF-8";
+/* CSS Document */
+
+
+      ::highlight(search-result-highlight) {
+        background-color: yellow;
+        color: black;
+      }
